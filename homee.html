@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Xu Weng</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+        }
+
+        .container {
+            width: 1200px;
+            height: 330px;
+            display: table;
+            border: 1px solid lightblue;
+        }
+
+        .childDiv {
+            display: table-cell;
+            border: 1px solid gray;
+            margin-left: 400px
+        }
+
+        .childDiv2 {
+            display: table-cell;
+            border: 1px solid gray;
+            margin-left: 40px
+        }
+
+        .top {
+            width: 100%;
+            height: 350px;
+            background-color: white;
+        }
+
+        .title {
+            width: 1200px;
+            height: 50px;
+            background-color: white;
+        }
+
+        .content {
+            width: 1200px;
+            height: 300px;
+            background-color: lightblue;
+            display: flex;
+        }
+
+        .picture {
+            width: 380px;
+            height: 300px;
+            background-color: white;
+        }
+
+        .researchcontent {
+            width: 820px;
+            height: 300px;
+            background-color: white;
+        }
+
+
+
+        p {
+            padding-top: 10px;
+        }
+
+        span {
+            font-family: "rockwell";
+            text-align: left;
+            /* text-align: center; */
+            font-size: 15px;
+            margin-left: 10px;
+            color: black;
+            font-weight: bold;
+            /* position: absolute;
+            left: 0px;
+            top: 0px */
+        }
+
+        span2 {
+            font-family: "rockwell";
+
+            /* text-align: center; */
+            font-size: 15px;
+
+            color: black;
+
+        }
+
+        .left {
+            width: 15%;
+            height: 100%;
+            background-color: darkgray;
+            float: left;
+        }
+
+        .right {
+            position: absolute;
+            left: 0px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="title">
+            <p></p><span>1. KeyHealth: Respiration Rate Estimation Based on the Keysight UWB Testbed</span>
+        </div>
+        <p></p>
+        <div class="content">
+            <div class="picture"><img src="UWB_vital_sign.png" width="360" height="240"></div>
+            <div class="researchcontent">
+                <p>
+                    <span2>In addition to its good reputation for communication and localization, UWB is a competitive technology in the field of healthcare, considering its good penetration ability and fine time resolution. The proposed research is aimed at exploring the opportunity of using the UWB sensors on smart phones to monitor vital signs, such as respiration and heart rates. Monitoring our health conditions without any wearable devices is an exciting prospect. For example, you can know your health information on your smart phone while do not have to pay for an expensive smart watch.</span2>
+                </p>
+
+                <p>
+                    <span2>• In this research, it is important to distinguish the interest signal that carries vital signs with other interference signals (multi-paths). </span2>
+                </p>   
+
+                <p>
+                    <span2>• And the timestamp-based ToF (Time of Flight) measurement and maximum likelihood estimation will be applied to extract vital signs, such as the respiration period.</span2>
+                </p>   
+                
+                <p>
+                <span2>• In the end, the system verification will be implemented on the Keysight UWB testbed, which is constructed by a signal generator and a signal analyzer.</span2>
+                </p>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="top">
+        <div class="title">
+            <p></p><span>2. IoT (Internet of Things) Waveform Signal Creation and Offline Playback</span>
+        </div>
+        <p></p>
+        <div class="content">
+            <div class="picture"><img src="IoTUWB.jpeg" width="360" height="240"></div>
+            <div class="researchcontent">              
+                <p>
+                    <span2>• Developed features of IEEE 802.15.4-2015 UWB PHY and IEEE 802.15.4z UWB
+                        Enhanced Ranging Device PHY for the Keysight software Signal Studio for IoT.</span2>
+                </p>
+
+                <p>
+                    <span2>• Constructed ranging and indoor positioning system with off-the-shelf commodity chipsets.</span2>
+                </p>
+
+                <p>
+                    <span2>• Develop the software-defined UWB receiver compliant with IEEE 802.15.4 standard.</span2>
+                </p>
+
+                 <p>
+                    <span2><a href="UWBnew.pdf" target="_blank">...details</a>
+                    </span2>
+                </p> 
+
+            </div>
+        </div>
+    </div>
+
+    <div class="top">
+        <div class="title"><span>3. Short Multipath Mitigation in Pseudo-Satellite Based Indoor Positioning
+                Systems</span></div>
+        <p></p>
+        <div class="content">
+            <div class="picture"><img src="Indoor.png" width="360" height="240"></div>
+            <div class="researchcontent">
+                <p>
+                    <span2>• Proposed two efficient short multipath mitigation algorithms based on
+                        correlator/discriminator
+                        techniques to mitigate single short multipath ray with a delay of less than 30m for GPS L1 C/A
+                        signals.</span2>
+                </p>
+
+                <p>
+                    <span2>• Utilized C/C++ to develop the software-defined GPS L1 C/A signal simulator with multipath
+                        channels
+                        and receivers based on traditional and the proposed algorithms.</span2>
+                </p>
+
+                <p>
+                    <span2>• Tested the proposed algorithms in real short multipath scenes with the GPS RF signal
+                        simulator developed
+                        by our group and a broadband high-speed data recording system.</span2>
+                </p>
+
+                <p>
+                    <span2><a href="Poster.pdf" target="_blank">...details</a></span2>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="top">
+        <div class="title"><span>4. Detection and Tracking of Moving Targets in Slowly Rotating Background</span></div>
+        <p></p>
+        <div class="content">
+            <div class="picture"><img src="tracking.gif" width="360" height="240"></div>
+            <div class="researchcontent">
+                <p>
+                    <span2>• Used Lucas - Kanade sparse optical flow algorithm to detect moving objects.</span2>
+                </p>
+
+                <p>
+                    <span2>• Eliminated the interference of slowly rotating background by updating templates of targets.
+                    </span2>
+                </p>
+
+                <p>
+                    <span2>• Utilized normalized correlation coefficients to match targets and used Kalman filter to
+                        improve the
+                        real-time performance and stability of target tracking.</span2>
+                </p>
+
+                <p>
+                    <span2>• Utilized C++, Open CV to simulate and test above detection and tracking algorithms.
+                    </span2>
+                </p>
+
+                 <p>
+                    <span2><a href="Target.pdf" target="_blank">...details</a></span2>
+                </p> 
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
