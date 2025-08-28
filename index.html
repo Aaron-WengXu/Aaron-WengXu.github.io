@@ -1,109 +1,411 @@
-﻿
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <title>Xu Weng</title>
-    <style type="text/css">
 
-        * {
-            margin: 0;
-            padding: 0;
-        }
+    <meta name="authors" content="Jon Barron, Xu Weng">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2275%22>🤩</text></svg>">
 
-        html {
-            height: 100%;
-        }
+  </head>
 
-        body {
-            height: 100%;
-        }
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+        <tr style="padding:0px">
+          <td style="padding:0px">
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                    <tr style="padding:0px">
+                        <td style="padding:2.5%;width:63%;vertical-align:middle">
+                            <p class="name" style="text-align: center;">
+                                Xu Weng (翁旭)
+                            </p>
+                            <p style="color: grey; font-size: 18px; text-align: center;">xu009@e.ntu.edu.sg</p>
+                            <p>
+                                I'm a PhD student at <a href="https://ntu.edu.sg/">Nanyang Technological University</a> in Singapore, where I am fortunate to be supervised by <a href="https://dr.ntu.edu.sg/entities/person/Ling-Keck-Voon">Prof. KV Ling</a> 
+                            and supported by <a href="https://www.ntu.edu.sg/admissions/graduate/financialmatters/scholarships/rss">Nanyang Research Scholarship</a>.
+                            Priorly, I received a B.Eng. from <a href="https://en.nuaa.edu.cn/">Nanjing University of Aeronautics and Astronautics</a> in 2015, as well as a M.Eng. from <a href="https://ev.buaa.edu.cn/">Beihang University</a> in 2018, 
+                            both in Electrical Engineering. I worked as an R&D engineer at <a href="https://www.keysight.com/us/en/home.html">Keysight Technologies</a> from 2019 to 2020.
+                            </p>
+                            <p>
+                                My research focuses on spatial awareness in the internet of things, especially user-oriented localization from a data-driven perspective.
+                            </p>
+                            <p style="text-align:center">
+                                <!-- <a href="xu009@e.ntu.edu.sg">Email</a> &nbsp;/&nbsp; -->
+                                <a href="data/xuweng-CV.pdf">CV</a> &nbsp;/&nbsp;
+                                <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp; -->
+                                <a href="https://scholar.google.com/citations?user=mrSIQkEAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
+                                <!-- <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp;/&nbsp; -->
+                                <a href="https://github.com/AILocAR">Github</a>
+                            </p>
+                        </td>
+                        <td style="padding:2.5%;width:37%;max-width:37%">
+                            <a href="images/xu.jpeg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/xu.jpeg" class="hoverZoomLink"></a>
+                            <!-- border-radius: 50%; -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                    <tr>
+                        <td style="padding:16px;width:100%;vertical-align:middle">
+                        <h2>Research</h2>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                    <tr onmouseout="nerc_stop()" onmouseover="nerc_start()"  bgcolor="#BFC0F3">
+                        <td style="padding:16px;width:20%;vertical-align:middle">
+                          <div class="one">
+                            <div class="two" id='nerc_image'><video  width=100% height=100% muted autoplay loop>
+                            <source src="images/nerc.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                  
+                            </video></div>
+                            <img src='images/nerc2.png' width="160">
+                          </div>
+                          <script type="text/javascript">
+                            function nerc_start() {
+                              document.getElementById('nerc_image').style.opacity = "1";
+                            }
+                  
+                            function nerc_stop() {
+                              document.getElementById('nerc_image').style.opacity = "0";
+                            }
+                            nerc_stop()
+                          </script>
+                        </td>
+                        <td style="padding:8px;width:80%;vertical-align:middle">
+                          <a href="https://arxiv.org/abs/2508.14336">
+                            <span class="papertitle">NeRC: Neural Ranging Correction through Differentiable Moving Horizon Location Estimation</span>
+                          </a>
+                          <br>
+                          <strong>Xu Weng</strong>,
+                          <a href="https://dr.ntu.edu.sg/entities/person/Ling-Keck-Voon">KV Ling</a>,
+                          <a href="https://georgeliu233.github.io">Haochen Liu</a>,
+                          <a href="https://scholar.google.com/citations?user=aJw23OIAAAAJ&hl=en">Bingheng Wang</a>,
+                          <a href="https://ntu-caokun.github.io">Kun Cao</a>
+                          <br>
+                          <em>Preprint</em>, 2025
+                          <br>
+                          <a href="https://github.com/AILocAR/NeRC">code</a>
+                          /
+                          <a href="https://arxiv.org/abs/2508.14336">arXiv</a>
+                          <p></p>
+                          <p>
+                              An data-driven framework for correcting ranging errors, which is trained end-to-end using location-related loss. When combined with Euclidean
+                          distance field cost maps, NeRC can be trained using unlabeled data. 
+                          </p>
+                        </td>
+                      </tr>
 
-        .top {
-            width: 1500px;
-            height: 70px;
-            background-color: rgb(90, 31, 59);
-        }
+                      <tr onmouseout="prnet_stop()" onmouseover="prnet_start()">
+                        <td style="padding:16px;width:20%;vertical-align:middle">
+                          <div class="one">
+                            <div class="two" id='prnet_image'>
+                                        <img src='images/prnet.png' width=100%>
+                                      </div>
+                            <img src='images/prnet.png' width=100%>
+                          </div>
+                          <script type="text/javascript">
+                            function prnet_start() {
+                              document.getElementById('prnet_image').style.opacity = "1";
+                            }
+                  
+                            function prnet_stop() {
+                              document.getElementById('prnet_image').style.opacity = "0";
+                            }
+                            prnet_stop()
+                          </script>
+                        </td>
+                        <td style="padding:8px;width:80%;vertical-align:middle">
+                          <a href="https://ieeexplore.ieee.org/document/10506762">
+                              <span class="papertitle">PrNet: A Neural Network for Correcting Pseudoranges to Improve Positioning With Android Raw GNSS Measurements.
+                              </span>
+                          </a>
+                          <br>
+                          <strong>Xu Weng</strong>,
+                          <a href="https://dr.ntu.edu.sg/entities/person/Ling-Keck-Voon">KV Ling</a>, 
+                          <a href="https://georgeliu233.github.io">Haochen Liu</a>
+                          <br>
+                          <em>IEEE IOTJ</em>, 2024 
+                          <br>
+                          <a href="https://github.com/AILocAR/PrNet">code</a>
+                          /
+                          <a href="https://arxiv.org/abs/2309.12204">arXiv</a>
+                          <p></p>
+                          <p>
+                            A satellite-wise MLP is designed to regress pseudorange errors from six satellite, receiver, 
+                            context-related features derived from Android raw GNSS measurements. A novel method for labeling pseudorange errors 
+                            are proposed.
+                          </p>
+                        </td>
+                      </tr>
 
-        .navigation {
-            width: 1500px;
-            height: 35px;
-            background-color:  rgb(90, 31, 59);
-        }
+                      <tr onmouseout="quest_stop()" onmouseover="quest_start()" bgcolor="#BFC0F3">
+                        <td style="padding:16px;width:20%;vertical-align:middle">
+                          <div class="one">
+                            <div class="two" id='quest_image'><video  width=100% height=100% muted autoplay loop>
+                            <source src="images/GnssQuest.png" type="video/mp4">
+                            Your browser does not support the video tag.
+                            </video></div>
+                            <img src='images/GnssQuest.png' width="160">
+                          </div>
+                          <script type="text/javascript">
+                            function quest_start() {
+                              document.getElementById('quest_image').style.opacity = "1";
+                            }
+                  
+                            function quest_stop() {
+                              document.getElementById('quest_image').style.opacity = "0";
+                            }
+                            quest_stop()
+                          </script>
+                        </td>
+                        <td style="padding:8px;width:80%;vertical-align:middle">
+                          <a href="https://dl.acm.org/doi/10.1145/3666025.3699411">
+                              <span class="papertitle">GnssQuest: Questing for Suitable GNSS Satellites through Augmented Reality </span>
+                          </a>
+                          <br>
+                          <strong>Xu Weng</strong>,
+                          Yuhui Jin,
+                          <a href="https://dr.ntu.edu.sg/entities/person/Ling-Keck-Voon">KV Ling</a>
+                          <br>
+                          <em>ACM SenSys Poster Abstract</em>, 2024 
+                          <br>
+                          <!-- <a href="https://cat-4d.github.io/">project page</a> -->
+                          <!-- / -->
+                          <!-- <a href="images/cat4d.mp4">pdf</a> -->
+                          <p></p>
+                          <p>
+                            An Augmented Reality (AR)-assisted framework to help exclude Non-Line-of-Sight (NLOS) satellites
+                            to improve GNSS localization using mobile devices.
+                          </p>
+                        </td>
+                      </tr>
 
-        .content {
-            width: 100%;
-            height: 85%;
-            background-color: white;
-        }
+                      <tr onmouseout="uar_stop()" onmouseover="uar_start()">
+                        <td style="padding:16px;width:20%;vertical-align:middle">
+                          <div class="one">
+                            <div class="two" id='uar_image'><video  width=100% muted autoplay loop>
+                            <source src="images/uarlogger.png" type="video/mp4">
+                            Your browser does not support the video tag.
+                            </video></div>
+                            <img src='images/uarlogger.png' width=100%>
+                          </div>
+                          <script type="text/javascript">
+                            function uar_start() {
+                              document.getElementById('uar_image').style.opacity = "1";
+                            }
+                  
+                            function uar_stop() {
+                              document.getElementById('uar_image').style.opacity = "0";
+                            }
+                            uar_stop()
+                          </script>
+                        </td>
+                        <td style="padding:8px;width:80%;vertical-align:middle">
+                          <a href="https://dl.acm.org/doi/pdf/10.1109/IPSN61024.2024.00047">
+                            <span class="papertitle">UarLogger: Logging Measurements from UWB and AR Sensors on iOS Devices</span>
+                          </a>
+                          <br>
+                          Yuyang Zhang*,
+                          <strong>Xu Weng</strong>*,
+                          <a href="https://dr.ntu.edu.sg/entities/person/Ling-Keck-Voon">KV Ling</a>
+                          &nbsp(* Equal contributions)
+                          <br>
+                          <em>ACM/IEEE IPSN Poster Abstract</em>, 2024 &nbsp <font color="red"><strong>(Best Poster Runner-up Award)</strong></font>
+                          <br>
+                          <a href="https://github.com/Huoyanlifusu/UarLogger">code</a>
+                          <p></p>
+                          <p>
+                            A tool to log the relative location measurements from UWB and AR sensors mounted on iOS devices, as well as context-related data.
+                          </p>
+                        </td>
+                      </tr>                 
+                <!-- </tbody>
+            </table> -->
 
-        .footer {
-            width: 100%;
-            height: 5%;
-            background-color: darkgray;
-            text-align: center;
-            clear: none;
-        }
+            <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                    <tr>
+                        <td style="padding:16px;width:100%;vertical-align:middle">
+                        <h2>Other Research</h2>
+                        </td>
+                    </tr>
+                </tbody>
+            </table> -->
 
-        p {
-            padding-top: 10px;
-        }
+            <!-- <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody> -->
+                    <tr onmouseout="mhe_stop()" onmouseover="mhe_start()" bgcolor="#BFC0F3">
+                        <td style="padding:16px;width:20%;vertical-align:middle">
+                          <div class="one">
+                            <div class="two" id='mhe_image'><video  width=100% height=100% muted autoplay loop>
+                            <source src="images/mhe.png" type="video/mp4">
+                            Your browser does not support the video tag.
+                            </video></div>
+                            <img src='images/mhe.png' width="160">
+                          </div>
+                          <script type="text/javascript">
+                            function mhe_start() {
+                              document.getElementById('mhe_image').style.opacity = "1";
+                            }
+                  
+                            function mhe_stop() {
+                              document.getElementById('mhe_image').style.opacity = "0";
+                            }
+                            mhe_stop()
+                          </script>
+                        </td>
+                        <td style="padding:8px;width:80%;vertical-align:middle">
+                          <a href="https://x.com/jon_barron/status/1891918200931061996">
+                              <span class="papertitle">Receding Horizon Recursive Location Estimation</span>
+                          </a>
+                          <br>
+                          <strong>Xu Weng</strong>,
+                          <a href="https://dr.ntu.edu.sg/entities/person/Ling-Keck-Voon">KV Ling</a>,
+                          Ling Zhao
+                          <br>
+                          <em>Preprint</em>, 2025
+                          <br>
+                          <!-- <a href="https://x.com/jon_barron/status/1891918200931061996">tweet</a>
+                          / -->
+                          <a href="https://arxiv.org/abs/2506.18430">arXiv</a>
+                          <p></p>
+                          <p>
+                           A framework unifying extended Kalman filter (EKF), factor graph optimization (FGO), and moving horizon estimation (MHE).
+                          </p>
+                        </td>
+                    </tr>
 
-        span {
-            font-family: "rockwell";
-            text-align: left;
-            line-height: 80px;
-            font-size: 40px;
-            margin-left: 10px;
-            color: white;
-        }
+                    <tr onmouseout="e2eprnet_stop()" onmouseover="e2eprnet_start()">
+                        <td style="padding:16px;width:20%;vertical-align:middle">
+                          <div class="one">
+                            <div class="two" id='e2eprnet_image'>
+                                        <img src='images/e2eprnet.png' width=100%>
+                                      </div>
+                            <img src='images/e2eprnet.png' width=100%>
+                          </div>
+                          <script type="text/javascript">
+                            function e2eprnet_start() {
+                              document.getElementById('e2eprnet_image').style.opacity = "1";
+                            }
+                  
+                            function e2eprnet_stop() {
+                              document.getElementById('e2eprnet_image').style.opacity = "0";
+                            }
+                            e2eprnet_stop()
+                          </script>
+                        </td>
+                        <td style="padding:8px;width:80%;vertical-align:middle">
+                          <a href="https://ieeexplore.ieee.org/document/10706359">
+                              <span class="papertitle">Towards End-to-End GPS Localization with Neural Pseudorange Correction</span>
+                          </a>
+                          <br>
+                          <strong>Xu Weng</strong>,
+                          <a href="https://dr.ntu.edu.sg/entities/person/Ling-Keck-Voon">KV Ling</a>,
+                          <a href="https://georgeliu233.github.io">Haochen Liu</a>, 
+                          <a href="https://ntu-caokun.github.io">Kun Cao</a>                 
+                          <br>
+                          <em>IEEE/ISIF FUSION</em>, 2024
+                          <br>
+                          <a href="https://github.com/AILocAR/E2EPrNet">code</a>
+                          /
+                          <a href="https://arxiv.org/abs/2401.10685">arXiv</a>
+                          /
+                          <a href="https://github.com/AILocAR/E2EPrNet/blob/main/E2E_PrNet_Fusion_2024.pdf">slides</a>
+                          <p></p>
+                          <p>
+                             The first neural ranging correction framework trained end-to-end through a differentiable localization engine.
+                          </p>
+                        </td>
+                    </tr>
+                   
+                    <tr onmouseout="gnss_stop()" onmouseover="gnss_start()" bgcolor="#BFC0F3">
+                        <td style="padding:16px;width:20%;vertical-align:middle">
+                            <div class="one">
+                            <div class="two" id='gnss_image'><video  width=100% muted autoplay loop>
+                            <source src="images/gnss.png" type="video/mp4">
+                            Your browser does not support the video tag.
+                            </video></div>
+                            <img src='images/gnss.png' width=100%>
+                            </div>
+                            <script type="text/javascript">
+                            function gnss_start() {
+                                document.getElementById('gnss_image').style.opacity = "1";
+                            }
+                    
+                            function gnss_stop() {
+                                document.getElementById('gnss_image').style.opacity = "0";
+                            }
+                            gnss_stop()
+                            </script>
+                        </td>
+                        <td style="padding:8px;width:80%;vertical-align:middle">
+                            <a href="https://ieeexplore.ieee.org/document/10365597">
+                            <span class="papertitle">Localization with Noisy Android Raw GNSS Measurements</span>
+                            </a>
+                            <br>
+                            <strong>Xu Weng</strong>,
+                            <a href="https://dr.ntu.edu.sg/entities/person/Ling-Keck-Voon">KV Ling</a>
+                            <br>
+                            <em>IEEE APWiMob</em>, 2023 &nbsp <font color="red"><strong>(Best Paper Award)</strong></font>
+                            <br>
+                            <a href="https://github.com/AILocAR/androidGnss">code</a>
+                            /
+                            <a href="https://arxiv.org/pdf/2309.08936">arXiv</a>
+                            <p></p>
+                            <p>
+                            An open-source positioning toolbox for noisy Android raw GNSS measurements
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
-        span2 {
-            font-family: "rockwell";
-            text-align: left;
-            text-align: center;
-            font-size: 20px;
-            margin-left: 10px;
-            color: white;
-        }
+            <footer class="footer">
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width=30%>
+                            <br>
+                            <p align="left">
+                                <font size="2">
+                                    Updated August 2025.
+                                </font>
+                            </p>
+                        </td>
+    
+                        <!-- <td width=40% align="center" hidden="hidden">
+                          <a href="https://clustrmaps.com/site/1bl80"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=p50vKcM-nrOZmNqIPVxMBYv8gETkGPaJxWjM23aTZQg&cl=ffffff" /></a>
+                        </td> -->
+                        <td width=30%>
+                            <br>
+                            <p align="right">
+                                <font size="2">
+                                    Thanks <a href="https://jonbarron.info/">Jon Barron</a> for website template.
+                                </font>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </footer>
 
-        img {
-            text-align: left;
-            vertical-align: top;
-            margin-left: 5%;
-        }
+          </td>
+        </tr>
+        </tbody>
+    </table>
 
-        .left {
-            width: 15%;
-            height: 100%;
-            background-color: darkgray;
-            float: left;
-        }
-    </style>
-</head>
 
-<body>
-    <div class="top">
-        <a href="home.html" style="text-decoration:none " target="below"><span>Xu Weng </span></a>        
-    </div>
+  </body>
 
-    <div class="navigation">
-        <a href="home.html" style="text-decoration:none " target="below"><span2>Home &nbsp;&nbsp;&nbsp;&nbsp;</span2></a>
-        <a href="homee.html" style="text-decoration:none " target="below"><span2>Research & Projects &nbsp;&nbsp;&nbsp;&nbsp;</span2></a>
-        <a href="publication.html" style="text-decoration:none " target="below"><span2>Publication &nbsp;&nbsp;&nbsp;&nbsp;</span2></a>
-        <a href="transcripts.html" style="text-decoration:none " target="_blank"><span2>Transcripts &nbsp;&nbsp;&nbsp;&nbsp;</span2></a>
-        <a href="awards.html" style="text-decoration:none " target="below"><span2>Awards & Honors &nbsp;&nbsp;&nbsp;&nbsp;</span2></a>
-        <a href="test.html" style="text-decoration:none " target="below"><span2>Standard Tests &nbsp;&nbsp;&nbsp;&nbsp;</span2></a>
-        <a href="CV.html" style="text-decoration:none " target="_blank"><span2>CV &nbsp;&nbsp;&nbsp;&nbsp;</span2></a>
-        <!-- <a href="yuanxi.html" style="text-decoration:none " target="below"><span2>Interested Areas &nbsp;&nbsp;&nbsp;&nbsp;</span2></a> -->
-    </div>
 
-    <div class="content">
-        <iframe src="home.html" width="100%" height="100%" scrolling="auto" name="below"></iframe>
-    </div>
-
-    <div class="footer"><p>Xu Weng &copy; 2020-08-23</p></div>
-
-</body>
 </html>
